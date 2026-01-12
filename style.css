@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f9ff;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #0a6ebd;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url("https://images.unsplash.com/photo-1576765607924-bf7b36d37b3d") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #0a6ebd;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    padding: 60px;
+    text-align: center;
+}
+
+.gray {
+    background: #eef4fb;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-container img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Doctors */
+.doctor-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Form */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+form button {
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #0a6ebd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
