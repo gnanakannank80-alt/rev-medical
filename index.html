@@ -10,6 +10,25 @@
     <link rel="icon" href="https://th.bing.com/th/id/OIP.Jzx16GCqcukGDw3yzxiUzQHaFj?w=246&h=184&c=7&r=0&o=7&pid=1.7&rm=3">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+function sendPatient() {
+  fetch("https://script.google.com/macros/s/AKfycbyiHpoatYNaUpzi-uCOcKBO2waIhm-5BPhIpwWk7LegrEMO86U9d2iN5mqKHH0KGfAJ/exec", {
+    method: "POST",
+    body: JSON.stringify({
+      patient_name: document.getElementById("name").value,
+      age: document.getElementById("age").value,
+      phone: document.getElementById("phone").value,
+      dob: document.getElementById("dob").value,
+      doctor: document.getElementById("doctor").value,
+      health_issue: document.getElementById("issue").value
+    })
+  })
+  .then(res => res.json())
+  .then(data => alert("Patient Details Saved ✅"))
+  .catch(err => alert("Error ❌"));
+}
+</script>
+
 </head>
 <body>
 
@@ -146,3 +165,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
