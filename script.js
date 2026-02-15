@@ -24,7 +24,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         return;
     }
 
-    fetch("https://script.google.com/macros/s/AKfycbyenee9JXGg3hSYVt_ACayno_nsypZWSigCh6FB7A9Xv1f0CI2WLUGa9mFadJLMC0P5/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzjGopru66AVKMXIjUdC3DFopAU3QwDCD9CyHep_fHQUtoZFKObdBrkpps57ozsAsI4/exec", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -42,4 +42,5 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         message.style.color = "red";
     });
 });
+
 
