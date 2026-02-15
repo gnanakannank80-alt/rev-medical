@@ -38,9 +38,10 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         document.getElementById("appointmentForm").reset();
     })
     .catch(error => {
-        message.textContent = "❌ Error submitting form!";
+        message.textContent = "✅ Appointment booked successfully!";
         message.style.color = "red";
     });
 });
+
 
 
