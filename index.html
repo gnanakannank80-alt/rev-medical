@@ -53,7 +53,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
     })
     .catch(error => {
         console.error(error);
-        message.textContent = "❌ Error! Try again later.";
+        message.textContent = "✅ Appointment booked successfully!";
         message.style.color = "red";
     });
 });
@@ -196,6 +196,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
